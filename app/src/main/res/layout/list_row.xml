@@ -8,16 +8,42 @@
     android:orientation="vertical"
 
     >
-
-    <TextView
-        android:id="@+id/title"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:text="Tetle"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Tetle"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="yera"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                />
+
+
+        </LinearLayout>
+
 
     <TextView
         android:id="@+id/genre"
@@ -25,14 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:text="genre"
+        android:layout_margin="10dp"
         />
 
-    <TextView
-        android:id="@+id/year"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text="yera"
-        />
 
+    </LinearLayout>
 </LinearLayout>

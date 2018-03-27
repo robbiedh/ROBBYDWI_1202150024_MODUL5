@@ -15,6 +15,7 @@ public class tes  extends Callback  {
     @Override
     public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         return makeMovementFlags(0, LEFT | RIGHT);
+
     }
 
     @Override
